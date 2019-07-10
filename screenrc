@@ -1,0 +1,8 @@
+defshell -bash
+autodetach on
+
+startup_message off
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kW}%-w%{.bW}%t [%n]%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d %c"
