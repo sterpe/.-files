@@ -1,4 +1,4 @@
-if [ "${TERM}" = "xterm-kitty" ]; then
+if [ "${TERM}" = "xterm-kitty" ] ; then
   source /dev/stdin <<<"$(kitty + complete setup bash)"
 fi
 
