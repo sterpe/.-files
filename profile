@@ -21,7 +21,11 @@ if [ -d "$HOME/bin" ] ; then
   export PATH="$HOME/bin:$PATH"
 fi
 
-export EDITOR='rlwrap -nc ed'
+if [ -x /usr/local/bin/rlwrap ] ; then
+  EDITOR='/usr/local/bin/rlwrap -nc ed'
+else
+  EDITOR='ed'
+fi
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
