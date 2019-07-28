@@ -22,9 +22,9 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 if [ -x /usr/local/bin/rlwrap ] ; then
-  EDITOR='/usr/local/bin/rlwrap -nc ed'
+  export EDITOR='/usr/local/bin/rlwrap -nc ed'
 else
-  EDITOR='ed'
+  export EDITOR='ed'
 fi
 
 export CLICOLOR=1
