@@ -30,6 +30,10 @@ fi
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export FZF_DEFAULT_COMMAND='/usr/local/bin/rg --ignore-file $HOME/.config/rg/.ignore --files'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # macOS VulkanSDK/MoltenVK configuration
   # Symlink to versioned SDK
